@@ -1,0 +1,128 @@
+body {
+    z-index: 0;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    overflow: hidden;
+}
+
+#background-video {
+position: fixed;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 100%;
+z-index: -1;
+object-fit: cover;
+}
+
+#menu {
+    position: relative;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.input_desk {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    font-size: larger;
+    color: aliceblue;
+    text-align: center;
+}
+
+.login {
+    height: 350px;
+    position: absolute;
+    left: calc(50% - 120px);
+    align-content: center;
+
+}
+
+.login_input {
+    border-radius: 100px;
+    margin: 10px;
+    width: 220px;
+    height: 30px;
+}
+
+.password_input {
+    border-radius: 100px;
+    margin: 10px;
+    width: 220px;
+    height: 30px;
+}
+
+.login_check {
+    width: 220px;
+    height: 50px;
+    border-radius: 100px;
+    position: absolute;
+    left: calc(50% - 105px);
+    top: calc(65%);
+    font-family: monospace;
+    font-size: larger;
+    background-color: rgba(242, 153, 235, 0.42);
+    color: aliceblue;
+    text-align: center;
+    transition: linear 0.5s;
+}
+
+.login_check:hover {
+        background-color: rgb(242, 153, 235);
+}
+
+    .hidden {
+      opacity: 0;
+      transform: translateX(100%);
+      pointer-events: none;
+    }
+
+    /* =8<0F8O ?>O2;5=8O: div ?;02=> 2J57605B 8 ?@>O2;O5BAO */
+    .show {
+      opacity: 1;
+      transform: translateX(0);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      pointer-events: auto;
+    }
+
+    /* =8<0F8O 8AG57=>25=8O :=>?:8 */
+    button {
+      transition: opacity 0.5s ease;
+    }
+
+    button.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+
+.log_choise {
+    margin-right: 100px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log_btn {
+    border-radius: 100px;
+    width: 320px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    font-family: monospace;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
