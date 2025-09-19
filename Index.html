@@ -11,46 +11,34 @@
         </video>
 
 
-        <div id="menu" class="hidden">
+        <main>
 
-            <div  class="input_desk">
+            <div id="menu" class="hidden">
 
-                <div class="login">
-                    <h2>Логин</h2>
-                    <input class="login_input">
-                    <h2>Пароль</h2>
-                    <input class="password_input">
+                <div  class="input_desk">
+
+                    <div class="login">
+                        <h2>Вход в журнал</h2>
+                        <h2>Логин</h2>
+                        <input class="login_input">
+                        <h2>Пароль</h2>
+                        <input class="password_input">
+                    </div>
+
+                    <button class="login_check">Войти</button>
+
                 </div>
+            </div>
 
-                <button class="login_check">Войти</button>
+
+            <div class="log_choise">
+                <button id="myButton" class="log_btn" onclick="animation_script">Журнал</button>
+
+                <script src="animation_script.js"></script>
 
             </div>
-        </div>
 
-
-        <div class="log_choise">
-            <button id="myButton" class="log_btn" onclick="animation_script">Войти</button>
-
-            <script class="animation_script">
-                const button = document.getElementById('myButton');
-                const div = document.getElementById('menu');
-
-                button.addEventListener('click', () => {
-                    if (div.classList.contains('hidden')) {
-                        // ?>:070BL
-                        div.classList.remove('hidden');
-                        div.classList.add('show');
-                        button.textContent = 'Отмена';
-                    } else {
-                        // A:@KBL
-                        div.classList.remove('show');
-                        div.classList.add('hidden');
-                        button.textContent = 'Войти';
-                    }
-                });
-            </script>
-
-        </div>
+        </main>
 
 
 

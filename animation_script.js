@@ -1,11 +1,16 @@
 const button = document.getElementById('myButton');
 const div = document.getElementById('menu');
 
-    button.addEventListener('click', () => {
-    // плавно скрываем кнопку
-    button.classList.add('fade-out');
-
-    // плавно показываем div
-    div.classList.remove('hidden');
-    div.classList.add('show');
+button.addEventListener('click', () => {
+    if (div.classList.contains('hidden')) {
+                            // ?>:070BL
+        div.classList.remove('hidden');
+        div.classList.add('show');
+        button.textContent = 'Отмена';
+    } else {
+                            // A:@KBL
+        div.classList.remove('show');
+        div.classList.add('hidden');
+        button.textContent = 'Журнал';
+    }
 });
